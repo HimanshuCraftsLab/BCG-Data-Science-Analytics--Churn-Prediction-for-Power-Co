@@ -1,58 +1,31 @@
-# BCG-Data-Science-Analytics--Churn-Prediction-for-Power-Co
-![BCG Virtual internship](https://user-images.githubusercontent.com/76781033/211288052-06feb4e3-8455-4d0a-8dbd-fb9f1add9ff8.png)
+## Exploratory Data Analysis
+Understanding the business through data
+### Background :sunny:
 
-## Background
-Your client is PowerCo, a major gas and electricity utility company that supplies to corporate, SME (small and medium enterprise) and residential customers. The power liberalization of the energy market in Europe has led to significant customer churn, especially in the SME segment. They have partnered with BCG to help diagnose and drive the source of churning SME customers.
+The BCG project team thinks that building a churn model to understand whether price sensitivity is the largest driver of churn has potential. The client has sent over some data and the AD wants you to perform some exploratory data analysis.
 
-A fair hypothesis is that price changes affect customer churn. Therefore, it is helpful to know which customers are more likely to churn at their current price, for which a good predictive model could be useful.
+The data that was sent over includes:
 
-Moreover, for those customers that are at risk of churning, a discount might incentivise them to stay with our client. The head of the SME division is considering a 20% discount as large enough to dissuade almost everyone from churning, especially those for whom price is the primary concern.
+- Historical customer data: Customer data such as usage, sign up date, forecasted usage etc
+- Historical pricing data: variable and fixed pricing data etc
+- Churn indicator: whether each customer has churned or not
 
-## Task 1: Business understanding and hypothesis testing
-Your first task is to understand what is going on with the client and think about how you would approach this problem and test the specific hypothesis.
+### Task
+:star2:**Sub-Task 1:**
 
-You must formulate the hypothesis as a data science problem and lay out the major steps needed to test this hypothesis, focusing on the data you would need from the client as well as the analytical models you would use to test the hypothesis.
+Perform some exploratory data analysis. Look into the data types, data statistics, specific parameters, and variable distributions. This first subtask is for you to gain a holistic understanding of the dataset. You should spend around 1 hour on this.
 
-If you are stuck:
+:sparkles:**Sub-Task 2:**
 
-- What are the key factors for a customer deciding to stay with or switch providers?
-- Data sources and fields that could be used to explore the contribution of various factors to a customer’s potential action
-- What would a data frame of your choice look like — what should each column and row represent?
-- What kind of exploratory analyses on the relevant fields can give more insights into churn behaviour?
+Verify the hypothesis of price sensitivity being to some extent correlated with churn. It is up to you to define price sensitivity and calculate it. You should spend around 30 minutes on this.
 
-## Task 2: Exploratory data analysis
-The BCG project team thinks that building a churn model to understand whether price sensitivity is the largest driver of churn has potential. The client has sent over some data which includes:
 
-- Historical customer data: customer data such as usage, sign-up date, forecasted usage
-- Historical pricing data: fixed and variable pricing data
-- Churn indicator: whether or not each customer has churned
-For task 2, you need to:
+:collision:**Sub-Task 3:**
 
-- Perform some exploratory data analysis. Look into data types, data statistics, specific parameters, and variable distributions
-- Verify the hypothesis of price sensitivity being correlated with churn
-- Prepare a half-page summary of key findings and add some suggestions for data augmentation — which other data sources should the client provide you with and which open source datasets might be useful?
+Prepare a half-page summary or slide of key findings and add some suggestions for data augmentation – which other sources of data should the client provide you with and which open source datasets might be useful? You should spend 10-15 minutes on this.
 
-## Task 3: Feature engineering and modelling
-The team now has a good understanding of the data and feels confident to use the data to further understand the business problem. The team now needs to brainstorm and build out features to uncover signals in the data that could inform the churn model.
+For your final deliverable, please submit your analysis (in the form of a jupyter notebook, code script or PDF) as well as your half-page summary document.
 
-Feature engineering is one of the keys to unlocking predictive insight through mathematical modelling. Based on the data that is available and was cleaned, identify what you think could be drivers of churn for our client and build those features to later use in your model.
+Note: Use the 2 datasets within the additional resources for this task and if you’re unsure on where to start with visualizing data, use the accompanying links. Be sure to also use the data description document to understand what the columns represent. The task description document outlines the higher-level motivation of the project. Finally, use the eda_starter.ipynb file to get started with some helper functions and methods.
 
-Your colleague has done some work on engineering the features within the cleaned dataset and has calculated a feature that seems to have predictive power.
-
-For task 3:
-
-- Try to think of ways to improve the feature’s predictive power and elaborate on why you made those choices
-- Train a random forest classifier, evaluate the results, and document the advantages and disadvantages of using a random forest for this particular use case
-
-Bonus: how much money could the client save with the use of the model?
-
-## Task 4: Findings and recommendations
-The client wants a quick update on the progress of the project.
-
-For task 4, develop an abstract slide synthesising all the findings from the project so far.
-
-A few things to think about for this abstract include:
-
-- What is the most important number or metric to share with the client?
-- How much detail should you go into, especially with the technical details of your work?
-- What impact would the model have on the client’s bottom line? Always test what you write with the “so what” test
+If you are stuck: Think about ways you can define price sensitivity. Make sure to think of all possible ways and investigate them.
